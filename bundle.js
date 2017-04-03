@@ -29237,7 +29237,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: '/', className: 'btn btn-danger' },
+	                    { to: '/React-blog/', className: 'btn btn-danger' },
 	                    'Cancel'
 	                )
 	            );
