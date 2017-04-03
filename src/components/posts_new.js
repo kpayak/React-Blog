@@ -12,7 +12,7 @@ class PostsNew extends Component {
     onSubmit(props) {
         this.props.addPost(props)
             .then(()=>{
-                this.context.router.push('/');
+                this.context.router.push('/React-blog/');
             });
     }
     

@@ -29164,7 +29164,7 @@
 	            var _this2 = this;
 
 	            this.props.addPost(props).then(function () {
-	                _this2.context.router.push('/');
+	                _this2.context.router.push('/React-blog/');
 	            });
 	        }
 	    }, {
@@ -32219,7 +32219,7 @@
 	            var _this2 = this;
 
 	            this.props.deletePost(this.props.params.id).then(function () {
-	                _this2.context.router.push('/');
+	                _this2.context.router.push('/React-blog/');
 	            });
 	        }
 	    }, {
@@ -32238,7 +32238,7 @@
 	                null,
 	                _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: '/' },
+	                    { to: '/React-blog/' },
 	                    'Back to Index'
 	                ),
 	                _react2.default.createElement(

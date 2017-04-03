@@ -16,7 +16,7 @@ class PostsShow extends Component {
     onDeleteClick() {
         this.props.deletePost(this.props.params.id)
         .then(()=> {
-            this.context.router.push('/');
+            this.context.router.push('/React-blog/');
         });
         
     }
@@ -28,7 +28,7 @@ class PostsShow extends Component {
 
         return(
             <div>
-                <Link to="/">Back to Index</Link>
+                <Link to="/React-blog/">Back to Index</Link>
                 <button 
                     className="btn btn-danger pull-xs-right"
                     onClick = {this.onDeleteClick.bind(this)}
