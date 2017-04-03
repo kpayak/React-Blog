@@ -27592,7 +27592,7 @@
 	var FETCH_SINGLE_POST = exports.FETCH_SINGLE_POST = 'FETCH_SINGLE_POST';
 	var DELETE_POST = exports.DELETE_POST = 'DELETE_POST';
 
-	var url = "http://reduxblog.herokuapp.com/api/posts?key=kp0286";
+	var url = "https://cors-anywhere.herokuapp.com/http://reduxblog.herokuapp.com/api/posts?key=kp0286";
 
 	function fetchPosts() {
 	    var request = _axios2.default.get(url);
@@ -27611,7 +27611,7 @@
 	}
 
 	function fetchSinglePost(id) {
-	    var fetchurl = "http://reduxblog.herokuapp.com/api/posts/" + id + "?key=kp0286";
+	    var fetchurl = "https://cors-anywhere.herokuapp.com/http://reduxblog.herokuapp.com/api/posts/" + id + "?key=kp0286";
 	    var request = _axios2.default.get(fetchurl);
 	    return {
 	        type: FETCH_SINGLE_POST,
@@ -27620,7 +27620,7 @@
 	}
 
 	function deletePost(id) {
-	    var deleteurl = "http://reduxblog.herokuapp.com/api/posts/" + id + "?key=kp0286";
+	    var deleteurl = "https://cors-anywhere.herokuapp.com/http://reduxblog.herokuapp.com/api/posts/" + id + "?key=kp0286";
 	    var request = _axios2.default.delete(deleteurl);
 	    return {
 	        type: DELETE_POST,

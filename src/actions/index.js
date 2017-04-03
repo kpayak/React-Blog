@@ -5,7 +5,7 @@ export const ADD_POST = 'ADD_POST';
 export const FETCH_SINGLE_POST = 'FETCH_SINGLE_POST';
 export const DELETE_POST = 'DELETE_POST';
 
-const url = "http://reduxblog.herokuapp.com/api/posts?key=kp0286";
+const url = "https://cors-anywhere.herokuapp.com/http://reduxblog.herokuapp.com/api/posts?key=kp0286";
 
 export function fetchPosts() {
     const request = Axios.get(url);
@@ -24,7 +24,7 @@ export function addPost(props) {
 }
 
 export function fetchSinglePost(id) {
-    const fetchurl = "http://reduxblog.herokuapp.com/api/posts/"+id+"?key=kp0286";
+    const fetchurl = "https://cors-anywhere.herokuapp.com/http://reduxblog.herokuapp.com/api/posts/"+id+"?key=kp0286";
     const request = Axios.get(fetchurl);
     return {
         type: FETCH_SINGLE_POST,
@@ -33,7 +33,7 @@ export function fetchSinglePost(id) {
 }
 
 export function deletePost(id) {
-    const deleteurl = "http://reduxblog.herokuapp.com/api/posts/"+id+"?key=kp0286";
+    const deleteurl = "https://cors-anywhere.herokuapp.com/http://reduxblog.herokuapp.com/api/posts/"+id+"?key=kp0286";
     const request = Axios.delete(deleteurl);
     return {
         type: DELETE_POST,
